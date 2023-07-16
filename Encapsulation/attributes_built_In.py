@@ -9,7 +9,7 @@ class Person:
 p = Person("Guman", 29)
 
 c_name = input()
-
+ 
 c_value = getattr(p, c_name)
 if hasattr(c_value, '__call__'):
     print(c_value())
