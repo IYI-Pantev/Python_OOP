@@ -27,4 +27,5 @@ class Student(Person):
     
     
 p = Person("Jo", 18)
+print(p.name)
 st = Student("Yojiin", 22)        
