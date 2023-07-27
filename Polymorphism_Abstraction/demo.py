@@ -33,3 +33,14 @@ calc_area(Rect(2, 5))
 calc_area(Circle(9))
 r = Rect(3, 8)
 print(f"is istance rect of shape: {isinstance(r, Shape)}")
+
+# ? method overriding
+class Person:
+    def say_hi(self):
+        print("Hello 1")
+        
+    def say_hi(self):
+        print("Hello 2")
+    
+p = Person()   
+p.say_hi()
