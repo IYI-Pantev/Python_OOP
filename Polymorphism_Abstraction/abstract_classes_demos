@@ -1,0 +1,37 @@
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+    
+    @abstractmethod
+    def perimeter(self):
+        pass
+    
+    def __str__(self):
+        return f"Area: {self.area()}; Perimeter: {self.perimeter()};"
+    
+    
+class Rect(Shape):
+    def __init__(self, witdh, height):
+        self.width = witdh
+        self.height = height
+        
+        
+    def area(self):
+        return self.width * self.height
+    
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+        
+        
+shapes = [
+    Rect(1, 2),
+    Rect(3, 2),
+    Rect(4, 2),
+    # can not  Shape()
+]
+
+for s in shapes:
+    print(s)
