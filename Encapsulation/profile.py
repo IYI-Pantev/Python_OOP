@@ -27,7 +27,7 @@ class Profile:
     def username(self, value):
         username_len = len(value)
         if not Profile.username_min_length <= username_len <= Profile.username_max_length:
-             raise ValueError('The username must be between 5 and 15 characters.')
+             raise ValueError(f'The username must be between {self.username_min_length} and {self.username_max_length} characters.')
         self.__username = value
         
         
