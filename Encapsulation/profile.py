@@ -9,14 +9,14 @@ class Profile:
     def __init__(self, username: str,  password: str):
         self.username = username
         self.password = password
-      
-    def __validate_pasword(self, pas):
-        if len(pas) < self.pasword_min_length:
-            raise ValueError("The pasword must be 8 or more characters with at least 1 digit and 1 uppercase letter.")
-        if len([x for x in pas if x.isupper()]) < self.min_uppercase_letters:
-            raise ValueError("The pasword must be 8 or more characters with at least 1 digit and 1 uppercase letter.")
-        if len([x for x in pas if x.isdigit()]) < self.min_digits:
-            raise ValueError("The pasword must be 8 or more characters with at least 1 digit and 1 uppercase letter.")
+    @classmethod  
+    def __validate_pasword(cls, pas):
+        if len(pas) < cls.pasword_min_length:
+            raise ValueError(f"The pasword must be {cls.pasword_min_length} or more characters with at least {cls.min_digits} digit and {cls.min_uppercase_letters} uppercase letter.")
+        if len([x for x in pas if x.isupper()]) < cls.min_uppercase_letters:
+            raise ValueError(f"The pasword must be {cls.pasword_min_length} or more characters with at least {cls.min_digits} digit and {cls.min_uppercase_letters} uppercase letter.")
+        if len([x for x in pas if x.isdigit()]) < cls.min_digits:
+            raise ValueError(f"The pasword must be {cls.pasword_min_length} or more characters with at least {cls.min_digits} digit and {cls.min_uppercase_letters} uppercase letter.")
         
       
     @property    
@@ -44,5 +44,14 @@ class Profile:
         return f"You have a profile with username: {self.username} and password: {self.password}"
     
     
+class Student(Profile):
+    min_uppercase_letters = 3
+        
+    
+    
+    
+    
 my_profile = Profile("Nick_pythonista", "Mbbbbbb7")
 print(my_profile)
+
+st = Student("Dj_bmn", "Mbbbbbb7")
