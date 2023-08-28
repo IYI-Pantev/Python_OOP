@@ -1,4 +1,4 @@
-# The OCP states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
+# The OCP/Open-Close Principle states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
 
 # ! OCP violation
 
