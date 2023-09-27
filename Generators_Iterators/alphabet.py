@@ -1,7 +1,7 @@
 import string
 
 # Generate the lower case English letters
-
+#generator
 def letters():
     for c in string.ascii_lowercase:
         yield c
