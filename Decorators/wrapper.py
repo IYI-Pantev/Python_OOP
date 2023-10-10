@@ -2,7 +2,6 @@ from functools import wraps
 
 # construct my decorator
 def uppercase(func):
-    @wraps(func)
     def wrapper():
         result = func()
         uppercase_result = result.upper()
