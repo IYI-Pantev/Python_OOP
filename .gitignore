@@ -1,0 +1,12 @@
+#ignoring specific files
+.idea
+.DS_Store
+.env
+*pycache*
+
+# ignoring specific folders
+/logs
+
+#ignoring file extension types
+*.psd
+
