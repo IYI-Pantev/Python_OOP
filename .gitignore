@@ -4,9 +4,11 @@
 .env
 *pycache*
 
+
 # ignoring specific folders
 /logs
-
+/.vscode
+/.pytest_cache
 #ignoring file extension types
 *.psd
 
