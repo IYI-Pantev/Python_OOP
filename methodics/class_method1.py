@@ -4,7 +4,7 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        self.pay = pay
+        self.pay = int(pay)
         self.email = first + '.' + last + '@gmail.com' 
         Employee.NUM_OF_EMPS += 1
 
