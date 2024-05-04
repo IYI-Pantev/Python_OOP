@@ -53,5 +53,7 @@ class Student(Profile):
     
 my_profile = Profile("Nick_pythonista", "Mbbbbbb7")
 print(my_profile)
+print(my_profile.username)
+print(my_profile.password)
 
-st = Student("Dj_bmn", "Mbbbbbb7")
+#st = Student("Dj_bmn", "Mbbbbbb7")
