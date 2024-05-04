@@ -10,20 +10,20 @@ def decorator_func(original_func):
     return wrapper_func
     
 # pythonic way
-# @decorator_func
-# def say_hi(name):
-#     return f'hello there {name}'
-
-# print(say_hi('james'))
-
-# clear straightforward way
+@decorator_func
 def say_hi(name):
     return f'hello there {name}'
 
-my_dec_func = decorator_func(say_hi)
-print(my_dec_func.__name__)
-# my_dec_func('john')
-print(my_dec_func('james'))
+print(say_hi('james'))
+
+# clear straightforward way
+# def say_hi(name):
+#     return f'hello there {name}'
+
+# my_dec_func = decorator_func(say_hi)
+# print(my_dec_func.__name__)
+# # my_dec_func('john')
+# print(my_dec_func('james'))
 
 # def f(x):
 #     z = 7 + x
