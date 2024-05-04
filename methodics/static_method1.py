@@ -33,7 +33,7 @@ emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'User', 60000)
 
 import datetime
-my_date = datetime.date(2024, 4, 26)
+my_date = datetime.date(2024, 5, 4)
 
 print(my_date.weekday())
 
