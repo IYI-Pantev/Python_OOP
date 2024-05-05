@@ -59,6 +59,9 @@ dev2 = Developer('Dan', "O'Conor", 82000, 'Python')
 #employee attributes and methods
 # print(emp1.fullname())
 # print(emp1.pay)
+# print(emp1.RAISE_AMOUNT)
+# emp1.RAISE_AMOUNT = 1.06
+
 #developer attributes and methods
 # print(dev1.fullname())
 # print(dev1.email)
