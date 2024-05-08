@@ -9,3 +9,5 @@ def letters():
 gen = letters()
 for _ in range(1, 15):
     print(next(gen), end=" ")
+
+print(next(gen), end=" ")
